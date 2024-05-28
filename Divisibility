@@ -1,0 +1,19 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+def check_divisibility(number):
+    divisible_by_7 = (number % 7 == 0)
+    divisible_by_11 = (number % 11 == 0)
+
+    if divisible_by_7 and divisible_by_11:
+        return f"{number} is divisible by both 7 and 11"
+    if divisible_by_7:
+        return f"{number} is divisible by 7"
+    if divisible_by_11:
+        return f"{number} is divisible by 11"
+    else:
+        return f"{number} is not divisible by either 7 or 11"
+
+number = int(input("Enter a number: "))
+result = check_divisibility(number)
+print(result)
